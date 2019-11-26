@@ -14,7 +14,7 @@ public class Libros_act extends AppCompatActivity {
     private Spinner spn;
     private TextView tv;
     private EditText et1, et2;
-    private String[] precios = new String[]{"5000", "12000", "25000", "18000","30000"};
+    private String[] precios = new String[]{"5000", "12000", "25000", "18000", "40000"}; //Agrego 2 precios a la lista
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class Libros_act extends AppCompatActivity {
 
     }
 
-    public void Calcular(View v)
+    public void Calcular(View v) //Se agrega Caballo de toye y Narracion Extraorinaria
     {
         if(spn.getSelectedItem().equals("Farenheit"))
         {
@@ -94,7 +94,7 @@ public class Libros_act extends AppCompatActivity {
                     +"El costo total es: "+ resultado);
         }
 
-        if(spn.getSelectedItem().equals("Narracion Extraordinaria"))
+        if(spn.getSelectedItem().equals("Narracion Extraorinaria"))
         {
 
             String precioTesla = precios[4];
@@ -108,8 +108,8 @@ public class Libros_act extends AppCompatActivity {
             tv.setText("Stock disponible: " +stock+ "\n"
                     +"El costo total es: "+ resultado);
         }
-
-
     }
 
 }
+
+
